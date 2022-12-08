@@ -9,7 +9,7 @@ int matrix[size][size];
 void reArrange();
 
 void inputNum(){
-    int num;
+    int num = 0;
     for (int i = 0; i < size ; i++) {
         for (int j = 0; j < size; j++) {
             scanf("%d", &num);
@@ -20,7 +20,7 @@ void inputNum(){
 }
 
 void isPath(){
-   int num1, num2;
+   int num1=0, num2=0;
     scanf("%d%d", &num1,&num2);
     if (matrix [num1][num2] != 0){
         printf("True\n");
@@ -31,7 +31,7 @@ void isPath(){
 }
 
 void theShorterPath (){
-    int num1, num2;
+    int num1=0, num2=0;
     scanf("%d%d", &num1,&num2);
     if (matrix [num1][num2] != 0 && num2 != num1){
         printf("%d",matrix [num1][num2]);
