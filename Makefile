@@ -16,6 +16,6 @@ my_mat.o: my_mat.c my_mat.h
 libmy_mat.a: my_mat.o
 	$(AR) -rcs libmy_mat.a my_mat.o
 
-.PHONY: clean
+.PHONY: clean all
 clean:
 	rm -f *.o *.a connections
