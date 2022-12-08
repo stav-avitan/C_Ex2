@@ -37,7 +37,7 @@ void theShorterPath (){
     printf("-1\n");
     }
     else{
-        printf("%d",matrix [num1][num2]);
+        printf("%d\n",matrix [num1][num2]);
     }
 }
 
