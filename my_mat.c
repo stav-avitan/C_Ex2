@@ -33,15 +33,22 @@ void isPath(){
 void theShorterPath (){
     int num1=0, num2=0;
     scanf("%d%d", &num1,&num2);
-    if (matrix [num1][num2] != 0 && num2 != num1){
+    if(matrix[num1][num2]==0||num1==num2){
+    printf("-1\n");
+    }
+    else{
         printf("%d",matrix [num1][num2]);
-    } else{
-        printf("-1\n");
     }
 }
 
 int minimum(int i, int j) {
-    if (j > i)
+    if (j==0){
+        return i;
+    }
+    if (i==0){
+        return j;
+    }
+    if (j>i)
     {
         return i;
     }
