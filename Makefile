@@ -5,7 +5,7 @@ FLAGS = -Wall -g
 all: connections libmy_mat.a
 
 connections: main.o libmy_mat.a
-	$(CC) $(FLAGS) -o main.o libmy_mat.a -o connections
+	$(CC) $(FLAGS) main.o libmy_mat.a -o connections
 
 main.o: main.c my_mat.h
 	$(CC) $(FLAGS) -c main.c
