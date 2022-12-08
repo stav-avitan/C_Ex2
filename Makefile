@@ -1,6 +1,6 @@
 CC=gcc
 AR = ar
-FLAFS = -Wall -g
+FLAGS = -Wall -g
 
 all: connections libmy_mat.a
 
